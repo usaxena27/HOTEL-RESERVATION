@@ -1,0 +1,5 @@
+venv/
+mlruns/
+logs/
+HOTEL_RESERVATION.egg-info/
+"notebook/random_forest.pkl" 
