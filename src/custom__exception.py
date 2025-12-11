@@ -13,7 +13,7 @@ class CustomException(Exception):
         Build a detailed error message with file name and line number.
         Uses current exception info from sys.exc_info().
         """
-        exc_type, exc_value, exc_tb = sys.exc_info()
+        exc_type, exc_value, exc_tb = traceback.sys.exc_info()
         if exc_tb is not None:
             file_name = exc_tb.tb_frame.f_code.co_filename
             line_number = exc_tb.tb_lineno
