@@ -22,7 +22,8 @@ pipeline{
                 script{
                     echo 'Setting up our Virtual Environment and Installing Dependencies'
                     sh '''
-                    pip install --user -r requirements.txt
+                    pip install --break-system-packages --upgrade pip
+                    pip install --break-system-packages -r requirements.txt
                     
                     '''
                 }
