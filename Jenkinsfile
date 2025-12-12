@@ -22,9 +22,7 @@ pipeline{
                 script{
                     echo 'Setting up our Virtual Environment and Installing Dependencies'
                     sh '''
-                    python -m venv ${VENV_DIR}
-                    . ${VENV_DIR}/bin/activate
-                    pip install --upgrade pip
+                    pip install --user -r requirements.txt
                     
                     '''
                 }
