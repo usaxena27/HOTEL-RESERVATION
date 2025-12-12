@@ -8,7 +8,6 @@ from utils.common_functions import read_yaml,load_data
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder  
 from imblearn.over_sampling import SMOTE
-import sys
 
 logger = get_logger(__name__)
 
