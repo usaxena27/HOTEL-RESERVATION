@@ -3,7 +3,6 @@ import pandas as pd
 from src.logger import get_logger
 from src.custom__exception import CustomException
 import yaml
-import sys
 
 logger = get_logger(__name__)
 
