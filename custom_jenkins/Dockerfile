@@ -5,7 +5,7 @@ USER root
 # Install dependencies
 RUN apt-get update -y && \
     apt-get install -y \
-        ca-certificates \d
+        ca-certificates \
         curl \
         gnupg && \
     install -m 0755 -d /etc/apt/keyrings && \
