@@ -20,8 +20,9 @@ COPY . .
 # Install the package in editable mode
 RUN pip install --no-cache-dir -e .
 
-# Train the model before running the application
-RUN python pipeline/training_pipeline.py
+# DON'T train during Docker build - it takes 38+ minutes and causes timeouts
+# Train the model after deployment or as a separate step
+# RUN python pipeline/training_pipeline.py
 
 # Expose the port that Flask will run on
 EXPOSE 5000
